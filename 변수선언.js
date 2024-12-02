@@ -16,8 +16,7 @@ var firstName="Jane"
 console.log(firstName)
 
 /** 
-const birthYear=3300 를 선언하면 const로 선언된 변수는 다시 그 변수값으로 사용 될 숭
-수 없으므로 중복사용 될 수 없다는 아래의 오류가 나옴.
+const birthYear=3300 를 선언하면 const로 선언된 변수는 다시 그 변수값으로 사용 될 수 없으므로 중복사용 될 수 없다는 아래의 오류가 나옴.
 
 "SyntaxError: Identifier 'birthYear' has already been declared
     at https://static.jsbin.com/js/prod/runner-4.1.8.min.js:1:13924
