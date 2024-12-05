@@ -6,9 +6,11 @@ function solution(s) {
 
 /**
  * parseInt(s, 10);를
+ * 
  * +s;
  * s/1;
  * parseInt(s);
+ * 
  * 등 으로 바꿔 줄 수 있다.
  * 
  */
