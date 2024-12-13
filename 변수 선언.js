@@ -1,7 +1,7 @@
 // 1. 변수를 선언하고 값을 할당해요.
-var firstName="John"
-let lastName="Doe"
-const birthYear=1990
+var firstName = "John"
+let lastName = "Doe"
+const birthYear = 1990
 
 
 // 2. 변수를 출력해요.
@@ -11,11 +11,11 @@ console.log(birthYear)
 
 
 // 3. 변수 값을 변경해요.
-var firstName="Jane"
+var firstName = "Jane"
 
 console.log(firstName)
 
-/** 
+/**
 const birthYear=3300 를 선언하면 const로 선언된 변수는 다시 그 변수값으로 사용 될 수 없으므로 중복사용 될 수 없다는 아래의 오류가 나옴.
 
 "SyntaxError: Identifier 'birthYear' has already been declared
