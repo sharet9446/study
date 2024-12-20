@@ -1,8 +1,8 @@
 // for 문을 이용
 function solution(absolutes, signs) {
     let sum = 0
-    for (let i = 0; i < absolutes.length; i++){
-         signs[i] ? sum += absolutes[i] : sum += absolutes[i] * -1
+    for (let i = 0; i < absolutes.length; i++) {
+        signs[i] ? sum += absolutes[i] : sum += absolutes[i] * -1
     }
     return sum
 }
