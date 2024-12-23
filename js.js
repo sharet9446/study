@@ -1,22 +1,36 @@
-const arr = [1, 2, 3, 3, 4];
-console.log(arr.length); // 5 (중복된 값도 포함)
+let a = [1];
+let num = 14;
 
-// 희소 배열 (Sparse Array)
-const sparseArr = [];
-sparseArr[100] = "hello";
-console.log(sparseArr.length); // 101 (마지막 인덱스 기준으로 길이 계산)
-console.log(sparseArr);
+for (let i = 2; i <= num / 2; i++) {
+    if (num % i === 0) {
+        a.push(i)
+    }
+}
+
+a.push(num)
 
 
 
-const mySet = new Set([1, 2, 3, 3, 4]);
-console.log(mySet.size); // 4 (중복된 값 제거)
+let b = [1, 2, 7, 14]
 
-mySet.add(5);
-console.log(mySet.size); // 5 (새로운 값 추가)
+let c = []
 
-mySet.add(1);
-console.log(mySet.size); // 5 (중복된 값은 무시됨)
+c.push(1, 2, 7, 14)
 
-mySet
-console.log('mySet: ', mySet);
+
+console.log(a);
+console.log(b);
+console.log(c);
+
+console.log(a == b);
+console.log(a == c);
+console.log(b == c);
+
+
+console.log(a[3]);
+console.log(b[3]);
+console.log(c[3]);
+
+console.log(a[3] == b[3]);
+console.log(a[3] == c[3]);
+console.log(b[3] == c[3]);
