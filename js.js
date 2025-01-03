@@ -1,8 +1,11 @@
-let i = 3;
+// const person = {
+//     name: "John",
+//     age: 31,
+//     isMarried: true,
+//     sayHello: () => {
+//         console.log(`Hello, My name is ${this.name}`)
+//     }
+// }
 
-while (i< 100) {
-    if (i % 5 === 0) {
-        console.log(i)
-    }
-    i++
-}
+// person.sayHello();
+
