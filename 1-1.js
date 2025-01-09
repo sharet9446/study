@@ -1,27 +1,34 @@
-var copyObjectDeep = function (target) {
-    var result = {};
-    if (typeof target === 'object' && target !== null) {
-        for (var prop in target) {
-            result[prop] = copyObjectDeep(target[prop])
-        }
-    } else {
-        result = target
-    }
-    return result;
+var user = {
+    name: "john",
+    age: 20,
 }
 
-var obj = {
-    a: 1,
-    b: {
-        c: null,
-        d: [1, 2],
+var getAged = function (user, passedTime) {
+    var result = {};
+    if (typeof user === 'object' && user !== null) {
+        for (prop in user) {
+            result[prop] = getAged(user[prop])
+            if (prop === 'age') {
+                result[prop] = passedTime
+            }
+        }
+    } else {
+        result = user
     }
-};
-var obj2 = copyObjectDeep(obj);
+    return result
+}
 
-obj2.a = 3;
-obj2.b.c = 4;
-obj2.b.d[1] = 3;
 
-console.log(obj);
-console.log(obj2);
+var agedUser = getAged(user, 6);
+
+var agedUserMustBeDifferentFromUser = function (user1, user2) {
+    if (!user2) {
+        console.log("Failed! user2 doesn't exist!");
+    } else if (user1 !== user2) {
+        console.log("Passed! If you become older, you will be different from you in the past!")
+    } else {
+        console.log("Failed! User same with past one");
+    }
+}
+
+agedUserMustBeDifferentFromUser(user, agedUser);
