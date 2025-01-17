@@ -8,6 +8,6 @@ function solution(a, b, n) {
         n = Received + remain
         answer += Received
     }
-    
+
     return answer;
 }
